@@ -1,66 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Salão Beleza — Agendamento</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salão Elegance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Salão Elegance</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio" class="active">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#local">Local</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <style>
-    :root{
-      --bg:#FAF9F7;
-      --card:#FFFFFF;
-      --muted:#8A8A8A;
-      --accent:#D7CFC6; /* neutro suave */
-      --accent-strong:#C9B8AA;
-      --text:#1F1F1F;
-      --radius:14px;
-      --shadow: 0 6px 18px rgba(30,30,30,0.06);
-      --gap:18px;
-      --maxw:980px;
-      --mobile-padding:18px;
-    }
+  <section id="inicio" class="conteudo ativo">
+    <h2>Bem-vinda ao Salão Elegance</h2>
+    <p>Realce sua beleza com nossos serviços de qualidade e atendimento personalizado.</p>
+    <button onclick="alert('Agende seu horário pelo aplicativo!')">Agendar Horário</button>
+  </section>
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "Helvetica Neue", Arial;
-      background: linear-gradient(180deg, var(--bg), #fff);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:flex;
-      justify-content:center;
-      padding:40px 16px;
-    }
+  <section id="servicos" class="conteudo">
+    <h2>Nossos Serviços</h2>
+    <ul class="lista-servicos">
+      <li>💅 Unhas de Gel</li>
+      <li>💇 Corte e Escova</li>
+      <li>💆 Hidratação Capilar</li>
+      <li>🌸 Progressiva</li>
+    </ul>
+  </section>
 
-    .site{
-      width:100%;
-      max-width:var(--maxw);
-      background:transparent;
-      display:grid;
-      grid-template-columns: 320px 1fr;
-      gap:28px;
-    }
+  <section id="local" class="conteudo">
+    <h2>Localização</h2>
+    <p>Rua das Rosas, 125 - Centro, Cidade Bela</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.687153798734!2d-46.66232528502171!3d-23.58139566841656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c84f1d9c11%3A0xfaa2a7b2e4a02820!2sSal%C3%A3o%20de%20Beleza!5e0!3m2!1spt-BR!2sbr!4v1680543185968!5m2!1spt-BR!2sbr"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
 
-    /* Left column (menu) */
-    .aside{
-      background:var(--card);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:24px;
-      display:flex;
-      flex-direction:column;
-      gap:18px;
-      min-height:360px;
-    }
-    .logo{
-      display:flex;
-      gap:12px;
-      align-items:center;
-    }
-    .logo .icon{
-      width:46px;height:46px;border-radius:10px;
-      background:linear-gradient(180deg,var(--accent),var(--accent-strong));
-      display:flex;align-items:center;justify-content:center;
-      fon
+  <footer>
+    <p>© 2025 Salão Elegance | Todos os direitos reservados</p>
+  </footer>
 
+  <script src="script.js"></script>
+</body>
+</html>
