@@ -11,4 +11,3 @@ links.forEach(link => {
     alvo.classList.add('ativo');
   });
 });
-
