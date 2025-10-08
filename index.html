@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Salão Beleza — Agendamento</title>
+
+  <style>
+    :root{
+      --bg:#FAF9F7;
+      --card:#FFFFFF;
+      --muted:#8A8A8A;
+      --accent:#D7CFC6; /* neutro suave */
+      --accent-strong:#C9B8AA;
+      --text:#1F1F1F;
+      --radius:14px;
+      --shadow: 0 6px 18px rgba(30,30,30,0.06);
+      --gap:18px;
+      --maxw:980px;
+      --mobile-padding:18px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg), #fff);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      justify-content:center;
+      padding:40px 16px;
+    }
+
+    .site{
+      width:100%;
+      max-width:var(--maxw);
+      background:transparent;
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:28px;
+    }
+
+    /* Left column (menu) */
+    .aside{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:24px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      min-height:360px;
+    }
+    .logo{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo .icon{
+      width:46px;height:46px;border-radius:10px;
+      background:linear-gradient(180deg,var(--accent),var(--accent-strong));
+      display:flex;align-items:center;justify-content:center;
+      fon
 
