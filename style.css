@@ -6,20 +6,22 @@
 }
 
 body {
-  background-color: #f8f3ef;
-  color: #4a3f35;
+  background-color: #fdf6f2; /* fundo nude rosado */
+  color: #5b4740; /* marrom suave */
 }
 
 header {
-  background-color: #f2e5da;
+  background-color: #f6e7e0; /* bege rosado */
   padding: 15px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
+  border-bottom: 2px solid #f2d8cc;
 }
 
 h1 {
-  color: #5a4635;
+  color: #8b5e52; /* rosa queimado */
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -31,26 +33,32 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #5a4635;
+  color: #8b5e52;
   font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 20px;
-  background-color: #f6efe9;
+  padding: 6px 16px;
+  border-radius: 25px;
+  background-color: #fbeae2;
   transition: 0.3s;
 }
 
 nav a:hover, nav a.active {
-  background-color: #e7d6c7;
+  background-color: #f3cfc6; /* rosa claro */
+  color: #5b3b34;
 }
 
 section {
   display: none;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 section.ativo {
   display: block;
+}
+
+h2 {
+  color: #7a4c40;
+  margin-bottom: 15px;
 }
 
 .lista-servicos {
@@ -59,34 +67,39 @@ section.ativo {
 }
 
 .lista-servicos li {
-  background: #fffaf6;
+  background: #fff9f7;
   margin: 10px auto;
   padding: 15px;
   width: 80%;
   border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   font-weight: 500;
+  color: #5b4740;
 }
 
 button {
-  margin-top: 20px;
-  background-color: #d8c2a8;
-  color: #4a3f35;
+  margin-top: 25px;
+  background-color: #e8c2b0; /* tom nude rosado */
+  color: #4d3731;
   border: none;
-  padding: 10px 25px;
-  border-radius: 25px;
+  padding: 12px 30px;
+  border-radius: 30px;
   cursor: pointer;
+  font-weight: 500;
   transition: 0.3s;
 }
 
 button:hover {
-  background-color: #c6ae90;
+  background-color: #d6a998;
 }
 
 footer {
-  background-color: #f2e5da;
+  background-color: #f6e7e0;
   text-align: center;
   padding: 15px;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
   margin-top: 40px;
+  color: #7a4c40;
+  font-size: 14px;
 }
+
