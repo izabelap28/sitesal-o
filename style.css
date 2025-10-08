@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: #fff9f8; /* fundo claro rosado */
+  background-color: #fff9f8; /* fundo rosado claro */
   color: #5b3f38;
 }
 
 header {
-  background-color: #f8e8e3; /* rosa claro */
+  background-color: #f8e8e3; /* rosa bege */
   padding: 15px 0;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -48,10 +48,16 @@ section {
   display: none;
   padding: 50px 20px;
   text-align: center;
+  animation: fadeIn 0.5s ease;
 }
 
 section.ativo {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 h2 {
