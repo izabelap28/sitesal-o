@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salão Belíssima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Salão Belíssima</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio" class="active">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#local">Local</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="ativo">
+      <h2>Bem-vinda ao Salão Belíssima</h2>
+      <p>Transforme seu visual com elegância e cuidado. Agende seu horário agora mesmo!</p>
+      <button class="cta" onclick="alert('Agendamento online em breve!')">Agendar</button>
+    </section>
+
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      <ul class="lista-servicos">
+        <li>💅 Unhas de Gel — 60 min</li>
+        <li>💇 Corte e Escova — 45 min</li>
+        <li>💆 Hidratação Capilar — 50 min</li>
+        <li>🌸 Progressiva — 90 min</li>
+      </ul>
+    </section>
+
+    <section id="local">
+      <h2>Nosso Local</h2>
+      <p>Rua das Rosas, 250 — Centro, Cidade Bela</p>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+das+Rosas,+250&output=embed"
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Salão Belíssima
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
