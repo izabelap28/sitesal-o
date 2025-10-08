@@ -6,22 +6,21 @@
 }
 
 body {
-  background-color: #fdf6f2; /* fundo nude rosado */
-  color: #5b4740; /* marrom suave */
+  background-color: #fff9f8; /* fundo claro rosado */
+  color: #5b3f38;
 }
 
 header {
-  background-color: #f6e7e0; /* bege rosado */
+  background-color: #f8e8e3; /* rosa claro */
   padding: 15px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
-  border-bottom: 2px solid #f2d8cc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h1 {
-  color: #8b5e52; /* rosa queimado */
+  color: #a7746f;
+  font-size: 26px;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 nav ul {
@@ -33,23 +32,22 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #8b5e52;
-  font-weight: 500;
-  padding: 6px 16px;
-  border-radius: 25px;
-  background-color: #fbeae2;
+  color: #8a5a55;
+  background-color: #fde6e0;
+  padding: 8px 16px;
+  border-radius: 20px;
   transition: 0.3s;
 }
 
 nav a:hover, nav a.active {
-  background-color: #f3cfc6; /* rosa claro */
-  color: #5b3b34;
+  background-color: #f2cfc7;
+  color: #5a3b36;
 }
 
 section {
   display: none;
-  text-align: center;
   padding: 50px 20px;
+  text-align: center;
 }
 
 section.ativo {
@@ -57,8 +55,8 @@ section.ativo {
 }
 
 h2 {
-  color: #7a4c40;
-  margin-bottom: 15px;
+  color: #915c55;
+  margin-bottom: 10px;
 }
 
 .lista-servicos {
@@ -67,39 +65,36 @@ h2 {
 }
 
 .lista-servicos li {
-  background: #fff9f7;
+  background: #fff3f1;
   margin: 10px auto;
   padding: 15px;
   width: 80%;
   border-radius: 15px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  font-weight: 500;
-  color: #5b4740;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  color: #5b3f38;
 }
 
 button {
-  margin-top: 25px;
-  background-color: #e8c2b0; /* tom nude rosado */
-  color: #4d3731;
+  background-color: #f1c7be;
   border: none;
-  padding: 12px 30px;
-  border-radius: 30px;
-  cursor: pointer;
+  color: #4a2f2a;
+  padding: 12px 25px;
+  border-radius: 25px;
   font-weight: 500;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 button:hover {
-  background-color: #d6a998;
+  background-color: #e4ada3;
 }
 
 footer {
-  background-color: #f6e7e0;
+  background-color: #f8e8e3;
   text-align: center;
   padding: 15px;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
   margin-top: 40px;
-  color: #7a4c40;
+  color: #8a5a55;
   font-size: 14px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
 }
-
