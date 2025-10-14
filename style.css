@@ -1,3 +1,4 @@
+/* ======= RESET E BASE ======= */
 * {
   margin: 0;
   padding: 0;
@@ -6,49 +7,69 @@
 }
 
 body {
-  background-color: #fff9f8; /* fundo rosado claro */
+  background: linear-gradient(to bottom right, #fff9f8, #fef4f2);
   color: #5b3f38;
+  scroll-behavior: smooth;
 }
 
+/* ======= CABEÇALHO ======= */
 header {
-  background-color: #f8e8e3; /* rosa bege */
-  padding: 15px 0;
+  background-color: #f8e8e3;
+  padding: 20px 0;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-h1 {
+header h1 {
   color: #a7746f;
-  font-size: 26px;
+  font-size: 30px;
   margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px #f2cfc7;
+  animation: titleFade 2s ease;
 }
 
+@keyframes titleFade {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======= NAVEGAÇÃO ======= */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   color: #8a5a55;
   background-color: #fde6e0;
-  padding: 8px 16px;
-  border-radius: 20px;
-  transition: 0.3s;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
 nav a:hover, nav a.active {
   background-color: #f2cfc7;
   color: #5a3b36;
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
 
+/* ======= SEÇÕES ======= */
 section {
   display: none;
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn 0.6s ease;
 }
 
 section.ativo {
@@ -56,51 +77,109 @@ section.ativo {
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
+/* ======= TÍTULOS ======= */
 h2 {
   color: #915c55;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  position: relative;
 }
 
+h2::after {
+  content: "🌸";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  animation: flowerPulse 2s infinite ease-in-out;
+}
+
+@keyframes flowerPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.2) rotate(10deg); }
+}
+
+/* ======= LISTA DE SERVIÇOS ======= */
 .lista-servicos {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 25px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lista-servicos li {
   background: #fff3f1;
-  margin: 10px auto;
-  padding: 15px;
-  width: 80%;
+  margin: 10px 0;
+  padding: 15px 20px;
   border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   color: #5b3f38;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.lista-servicos li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* ======= BOTÕES ======= */
 button {
   background-color: #f1c7be;
   border: none;
   color: #4a2f2a;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
 
 button:hover {
   background-color: #e4ada3;
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
 }
 
+/* ======= MAPA ======= */
+.mapa-container {
+  margin: 25px auto;
+  max-width: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 3px solid #f2cfc7;
+}
+
+/* ======= RODAPÉ ======= */
 footer {
   background-color: #f8e8e3;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 18px;
+  margin-top: 60px;
   color: #8a5a55;
-  font-size: 14px;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  font-size: 15px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+footer::before {
+  content: "💖✨💐";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  animation: floatDecor 3s infinite ease-in-out;
+}
+
+@keyframes floatDecor {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -8px); }
 }
